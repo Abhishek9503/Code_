@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Job application Form</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <div class="container">
+      <div class="apply_box">
+        <h1>Job Application 
+            <span class="title_small">(web) </span>
+        </h1>
+
+        <form action="">
+<div class="form_container">
+    <div class="form_control">
+        <label for="first_name">First Name</label>
+        <input
+         id="first_name"
+        name="first_name" 
+        placeholder="Enter First Name">
+    </div>
+    <div class="form_control">
+        <label for="last_name">Last Name</label>
+        <input
+         id="last_name"
+        name="last_name" 
+        placeholder="Enter Last Name">
+    </div>
+
+    <div class="form_control">
+        <label for="E-mail">E-mail</label>
+        <input
+        type="email"
+         id="email"
+        name="email" 
+        placeholder="email">
+    </div>
+
+    <div class="form_control">
+        <label for="job_role">Job Role</label>
+        <select id="job_role" name="job_role">
+        <option value="">Select Job Role</option>
+        <option value="frontend">Frontend Developer</option>
+        <option value="backend">Backend developer</option>
+        <option value="ui_ux">UI_UX Designer</option>
+    
+</select>
+
+    </div>
+
+    <div class="form_control">
+        <label for="address">Address</label>
+        <textarea 
+        id="address" 
+        name="address" 
+        rows="4" 
+        cols="60" 
+        placeholder="Enter address>">
+    </textarea>
+
+
+    <div class="form_control">
+        <label for="city">City</label>
+        <input
+         id="city"
+        name="city" 
+        placeholder="Enter city name">
+    </div>
+
+    <div class="form_control">
+        <label for="">Pin Code</label>
+        <input
+        type="number"
+         id="pin_code"
+        name="pin_code" 
+        placeholder="Enter pin code">
+    </div>
+
+    <div class="form_control">
+        <label for="">Date</label>
+        <input value="2022-01-10"
+        type="date"
+         id="date"
+        name="date" >
+    </div>
+    <div class="form_control">
+        <label for="upload">Upload Your cv</label>
+        <input
+        type="file"
+         id="Upload"
+        name="upload" 
+        placeholder="Upload your CV">
+    </div>
+    </div>
+   </div>
+   
+   <div class="button_container">
+    <button type="submit">Apply Now
+    </button>
+   </div>
+  </form>
+ </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    background-color: #ccc;
+}
+
+.container{
+    max-width:900px ;
+    margin: 0 auto;
+}
+
+.apply_box{
+    max-width: 600;
+    padding: 20px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow: 4px 3px 5px rgba(1,1,1,0.1);
+    border-radius: 10px;
+}
+
+.title_small{
+    font-size: 20px;
+}
+
+.form_container{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.form_control{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+input,select,textarea{
+    padding: 6px 10px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+input:focus{
+    outline: red;
+}
+
+.button_container{
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+
+}
+
+button{
+    background-color: red;
+    border: transparent solid 2px;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 8px;
+    transition: 0.3s ease-in;
+}
+
+button:hover{
+    background-color: grey;
+    border: 2px solid red;
+    color: black;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+}
+
+.textarea_control{
+    grid-column: 1 / span2;
+}
+
+.textarea_control textarea{
+    width: 100px;
+}
+
+@media(max-width):460px{
+.textarea_control textarea
+    width: 100px;
+}

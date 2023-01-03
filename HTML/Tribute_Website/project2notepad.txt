@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>The tribute website | APJ Abdul Kalam</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+<div class="container">
+<div class="content"> 
+
+
+    <section class="top_section">
+
+        <div class="image_container">
+
+            <img src="./images/apj.jpg" alt="Tribute"> 
+        </div>
+
+        <div>
+
+            <h1>A.P.j Abdul Kalam </h1>
+            <h4>1931 - 2015</h4>
+        </div>
+        
+    </section>
+    <section class="about_section">
+        <h2>Missile Man Of india</h2>
+        <p>
+            <b>Abhishek yadav from karanwas</b> Abhishek yadav from karanwas Abhishek yadav from karanwas Abhishek yadav from karanwas Abhishek yadav from karanwas Abhishek yadav from karanwas
+            Abhishek yadav from karanwas Abhishek yadav from karanwas Abhishek yadav from karanwas Abhishek yadav from karanwas Abhishek yadav from karanwas
+            Abhishek yadav from karanwas Abhishek yadav from karanwas Abhishek yadav from karanwas Abhishek yadav from karanwas Abhishek yadav from karanwas
+        </p>
+    </section>
+
+    <section class="biography_section">
+
+    <h3>Biography</h3>
+    <ul>
+        <li>This is Abdul kalam</li>
+    </ul>
+    <ul>
+        <li>This is Abdul kalam</li>
+    </ul>
+    <ul>
+        <li>This is Abdul kalam</li>
+    </ul>
+    <ul>
+        <li>This is Abdul kalam</li>
+    </ul>
+    <ul>
+        <li>This is Abdul kalam</li>
+    </ul>
+    </section>
+
+    <footer>
+       <p>This design is created by Abhishek YAdav <br>
+        Read more about A.P.J KALAM on <a href="link">Wikipedia</a>
+       </p> 
+    </footer>
+  </div>
+</div>
+        
+    </body>
+</html>
+
+
+
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color:#e5e5fd;
+    min-height: 100vh;
+    border:10px solid #1d1e4c;
+}
+
+.content{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.top_section{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top_section h1{
+    font-size: 60px;
+    font-weight: bold;
+    color: #1d1e4c;
+    text-transform: uppercase;
+    align-items: flex-end;
+}
+
+.top_section h4{
+
+text-align: end;
+font-size: 30px;
+
+}
+
+.image_container{
+    border-radius: 50%;
+    overflow: hidden;
+}
+.image_container,img{
+
+    width: 300px;
+    height: 300px;
+}
+
+.about_section{
+    margin: 50px;
+}
+.about_section h2{
+    font-size: 70px;
+    font-weight: 400;
+    margin: 20px;
+}
+
+.about_section p{
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1.2px;
+    text-align: justify;
+}
+
+.biography_section{
+    margin-top: 50px;
+    margin-bottom: 50px,0;
+
+}
+
+.biography_section h3 {
+    margin-bottom: 20px;   
+}
+
+.biography_section ul{
+    margin-left: 50px;
+}
+
+.biography_section li{
+    margin-bottom: 15px;
+}
+
+footer
+{
+    margin:50px,0;
+}
+
+footer p{
+    text-align: end;
+    text-shadow: none;
+}
